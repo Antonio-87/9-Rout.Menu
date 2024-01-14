@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   const isActiveItem = ({ isActive }: { isActive: boolean }) => {
-    return isActive ? "menu__item menu__item-active" : undefined;
+    return isActive ? "menu__item menu__item-active" : "menu__item";
   };
 
   return (
     <>
       <nav className="menu">
-        <NavLink className={isActiveItem} to="/">
+        <NavLink className={isActiveItem} to="/" end>
           Главная
         </NavLink>
         <NavLink className={isActiveItem} to="/drift">
