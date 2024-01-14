@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <>
       <nav className="menu">
-        <NavLink className={isActiveItem} to="/" end>
+        <NavLink className={isActiveItem} to="/">
           Главная
         </NavLink>
         <NavLink className={isActiveItem} to="/drift">
