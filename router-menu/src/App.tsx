@@ -8,13 +8,13 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
-  Link,
   createRoutesFromElements,
+  Routes,
 } from "react-router-dom";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <div>
+    <Route>
       <Menu />
       <div className="page">
         <Route path="/" element={<HomePage />} />
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
         <Route path="/timeattack" element={<TimeAttackPage />} />
         <Route path="/forza" element={<ForzaPage />} />
       </div>
-    </div>
+    </Route>
   )
 );
 
